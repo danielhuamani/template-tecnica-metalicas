@@ -1,0 +1,127 @@
+.panel {
+  background: color_white;
+  box-sizing: border-box;
+  box-shadow: rgba(0,0,0,0.1) 0px 2px 6px;
+}
+.panel .panel__header {
+/*background color_sidebar*/
+  border-bottom: 1px solid color_sidebar;
+  padding: 10px 15px;
+}
+.panel .panel__header h4 {
+  color: color_sidebar;
+}
+.panel .panel__content {
+  padding: 15px 15px;
+}
+.formBasic .form-group input[type="text"],
+.formBasic .form-group input[type="number"],
+.formBasic .form-group input[type="password"] {
+  width: 100%;
+  height: 26px;
+  padding-left: 5px;
+  border-radius: 3px;
+  border: 1px solid color_sidebar;
+  box-sizing: border-box;
+  margin-top: 5px;
+  font-size: 13px;
+}
+.formBasic .form-group input[type="text"]:focus,
+.formBasic .form-group input[type="number"]:focus,
+.formBasic .form-group input[type="password"]:focus {
+  border: 1px solid color_success;
+  outline: color_panel;
+}
+.formBasic .form-group select {
+  width: 100%;
+  height: 28px;
+  margin-top: 5px;
+  font-size: 13px;
+  border-radius: 3px;
+  border: 1px solid color_sidebar;
+}
+.formBasic .form-group select option {
+  margin-top: 50px;
+}
+.formBasic .form-group select:focus {
+  border: 1px solid color_success;
+  outline: color_panel;
+}
+.formBasic .form-group label {
+  font-size: 14px;
+  color: color_sidebar;
+}
+.formBasic p.error {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 13px;
+  color: color_danger;
+}
+.formAdvanced .form-group:first-child .form-label {
+  border-top-left-radius: 4px;
+}
+.formAdvanced .form-group:first-child .form-input {
+  border-top: 1px solid color_sidebar;
+  border-top-right-radius: 4px;
+}
+.formAdvanced .form-group:last-child .form-label {
+  border-bottom-left-radius: 4px;
+}
+.formAdvanced .form-group:last-child .form-input {
+  border-bottom: 1px solid color_sidebar;
+  border-bottom-right-radius: 4px;
+}
+.formAdvanced .form-group .form-label {
+  border-bottom: 1px solid color_main;
+  background: color_sidebar;
+}
+.formAdvanced .form-group .form-label label {
+  color: color_white;
+}
+.formAdvanced .form-group .form-input {
+/*padding-top 5px
+			padding-bottom 5px*/
+  border-right: 1px solid color_sidebar;
+}
+.formAdvanced .form-group .form-input textarea {
+  padding-left: 5px;
+  border-radius: 3px;
+  border: 1px solid color_sidebar;
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 100%;
+}
+.formAdvanced .form-group .form-input input[type="text"],
+.formAdvanced .form-group .form-input input[type="number"],
+.formAdvanced .form-group .form-input input[type="password"] {
+  width: 100%;
+  height: 26px;
+  padding-left: 5px;
+  border-radius: 3px;
+  border: 1px solid color_sidebar;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.formAdvanced .form-group .form-input input[type="text"]:focus,
+.formAdvanced .form-group .form-input input[type="number"]:focus,
+.formAdvanced .form-group .form-input input[type="password"]:focus {
+  border: 1px solid color_panel;
+  outline: color_panel;
+}
+/*botones*/
+.btn {
+  cursor: pointer;
+  margin: 0;
+  border: 1px solid color_sidebar;
+  padding: 7px 22px;
+  border-radius: 4px;
+}
+.btn--success {
+  background: color_success;
+  color: color_white;
+  border: 1px solid color_success_darken !important;
+  transition: 0.2s ease all;
+}
+.btn--success:hover {
+  background: color_success_darken;
+}

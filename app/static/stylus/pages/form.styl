@@ -1,0 +1,113 @@
+.panel
+	background color_white
+	box-sizing border-box
+	box-shadow rgba(0,0,0,0.1) 0px 2px 6px
+	.panel__header
+		/*background color_sidebar*/
+
+		border-bottom 1px solid color_sidebar
+		padding 10px 15px
+		h4
+			color color_sidebar
+	.panel__content
+		padding 15px 15px
+
+
+
+
+.formBasic
+	.form-group
+
+		//margin-bottom 10px
+		input[type="text"], input[type="number"], input[type="password"]
+			width 100%
+			height 26px
+			padding-left 5px
+			border-radius 3px
+			border 1px solid color_sidebar
+			box-sizing border-box
+			margin-top 5px
+			font-size 13px
+			&:focus
+				border 1px solid color_success
+				outline color_panel
+		select
+			width 100%
+			height 28px
+			margin-top 5px
+			font-size 13px
+			border-radius 3px
+			border 1px solid color_sidebar
+			option
+				margin-top 50px
+
+			&:focus
+				border 1px solid color_success
+				outline color_panel
+		label
+			font-size 14px
+			color color_sidebar
+	p.error
+		margin 0
+		margin-top 5px
+		font-size 13px
+		color color_danger
+.formAdvanced
+	.form-group:first-child
+		.form-label
+			border-top-left-radius 4px
+
+		.form-input
+			border-top 1px solid color_sidebar
+			border-top-right-radius 4px
+	.form-group:last-child
+		.form-label
+			border-bottom-left-radius 4px
+		.form-input
+			border-bottom 1px solid color_sidebar
+			border-bottom-right-radius 4px
+	.form-group
+		.form-label
+			border-bottom 1px solid color_main
+			background color_sidebar
+			label
+				color color_white
+		.form-input
+			/*padding-top 5px
+			padding-bottom 5px*/
+			border-right 1px solid color_sidebar
+			textarea
+				padding-left 5px
+				border-radius 3px
+				border 1px solid color_sidebar
+				box-sizing border-box
+				font-size 14px
+				width 100%
+
+			input[type="text"], input[type="number"], input[type="password"]
+				width 100%
+				height 26px
+				padding-left 5px
+				border-radius 3px
+				border 1px solid color_sidebar
+				box-sizing border-box
+				font-size 14px
+				&:focus
+					border 1px solid color_panel
+					outline color_panel
+/*botones*/
+
+.btn
+	cursor pointer
+	margin 0
+	border 1px solid color_sidebar
+	padding 7px 22px
+	border-radius 4px
+.btn--success
+	background color_success
+	color color_white
+
+	border 1px solid color_success_darken !important
+	transition 0.2s ease all
+	&:hover
+		background color_success_darken
