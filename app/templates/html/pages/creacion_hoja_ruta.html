@@ -85,7 +85,7 @@
             <div class="col-movil-100">
               <div class="panel formBasic">
                 <div class="panel__header">
-                  <h4>Listado de Avance</h4>
+                  <h4>Creacion de  Hoja de Ruta</h4>
                 </div>
                 <div class="panel__content">
                   <form action="">
@@ -121,35 +121,46 @@
                       </div>
                       <div class="col-movil-100 col-tablet-30 col-web-20">
                         <div class="form-group">
-                          <label>Desde</label>
-                          <input type="text" data-date-format="dd/mm/yyyy" placeholder="__/__/____" class="date-picker"/>
-                        </div>
-                        <p class="error">Campo Obligatorio</p>
-                      </div>
-                      <div class="col-movil-100 col-tablet-30 col-web-20">
-                        <div class="form-group">
-                          <label>Hasta</label>
+                          <label>Fecha</label>
                           <input type="text" data-date-format="dd/mm/yyyy" placeholder="__/__/____" class="date-picker"/>
                         </div>
                         <p class="error">
                           Campo Obligatorio
                           
+                          
                         </p>
                       </div>
                       <div class="col-movil-100 col-tablet-30 col-web-20">
                         <div class="form-group">
-                          <label>Contratista</label>
-                          <select>
-                            <option value="">Galvanizados</option>
-                            <option value="">Elementos</option>
-                            <option value="">Elementos</option>
-                          </select>
+                          <label>Hoja de Ruta</label>
+                          <input type="text"/>
                         </div>
                         <p class="error">Campo Obligatorio</p>
                       </div>
                       <div class="col-movil-100 col-tablet-30 col-web-20">
                         <div class="form-group">
-                          <input type="submit" value="BUSCAR" class="search btn btn--success"/>
+                          <label>Codigo de Elem</label>
+                          <input type="text"/>
+                        </div>
+                        <p class="error">Campo Obligatorio</p>
+                      </div>
+                      <div class="col-movil-100 col-tablet-30 col-web-20">
+                        <div class="form-group">
+                          <label>Cantidad</label>
+                          <input type="text"/>
+                        </div>
+                        <p class="error">Campo Obligatorio</p>
+                      </div>
+                      <div class="col-movil-100 col-tablet-30 col-web-20">
+                        <div class="form-group">
+                          <label>Descripcion</label>
+                          <input type="text"/>
+                        </div>
+                        <p class="error">Campo Obligatorio</p>
+                      </div>
+                      <div class="col-movil-100 col-tablet-30 col-web-20">
+                        <div class="form-group">
+                          <input type="submit" value="Agregar" class="search btn btn--success"/>
                         </div>
                       </div>
                     </div>
@@ -228,8 +239,8 @@
                     <h3>Número de Eventos: 10</h3>
                   </div>
                   <div class="row row--end">
-                    <div class="button-group"><a href="" class="btn btn--info">Asignar Fecha Fin</a><a href="" class="btn btn--success">Exportar Csv</a><a href="" class="btn btn--close">
-                        Cerrar
+                    <div class="button-group"><a href="" class="btn btn--close">Cerrar</a><a href="" class="btn btn--success">
+                        Grabar
                         </a></div>
                   </div>
                 </div>
@@ -252,7 +263,21 @@
           $('.date-picker').datepicker({
           });
           $('select').select2();
-          $(".datatable").DataTable();
+          $(".datatable").DataTable({
+              "language": {
+                  "lengthMenu": "Mostrar _MENU_ registros por pagina",
+                  "zeroRecords": "No se encontraron registros",
+                  "info": "Mostrando pagina _PAGE_ de _PAGES_",
+                  "infoEmpty": "No records available",
+                  "infoFiltered": "(filtered from _MAX_ total records)",
+                  "search": "Buscar",
+                  "paginate": {
+                    "previous": "Anterior",
+                    "next": "Siguiente"
+                  }
+              }
+      
+          });
       });
     </script>
     <script src="../../../static/js/core.js"></script>

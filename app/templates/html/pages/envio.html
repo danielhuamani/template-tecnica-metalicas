@@ -85,7 +85,7 @@
             <div class="col-movil-100">
               <div class="panel formBasic">
                 <div class="panel__header">
-                  <h4>Listado de Avance</h4>
+                  <h4>Envio de paquete / KIT</h4>
                 </div>
                 <div class="panel__content">
                   <form action="">
@@ -110,7 +110,7 @@
                       </div>
                       <div class="col-movil-100 col-tablet-30 col-web-20">
                         <div class="form-group">
-                          <label>Etapa Actual</label>
+                          <label>Etapa Origen</label>
                           <select>
                             <option value="">Galvanizado</option>
                             <option value="">Elementos</option>
@@ -121,14 +121,7 @@
                       </div>
                       <div class="col-movil-100 col-tablet-30 col-web-20">
                         <div class="form-group">
-                          <label>Desde</label>
-                          <input type="text" data-date-format="dd/mm/yyyy" placeholder="__/__/____" class="date-picker"/>
-                        </div>
-                        <p class="error">Campo Obligatorio</p>
-                      </div>
-                      <div class="col-movil-100 col-tablet-30 col-web-20">
-                        <div class="form-group">
-                          <label>Hasta</label>
+                          <label>Fecha</label>
                           <input type="text" data-date-format="dd/mm/yyyy" placeholder="__/__/____" class="date-picker"/>
                         </div>
                         <p class="error">
@@ -138,9 +131,9 @@
                       </div>
                       <div class="col-movil-100 col-tablet-30 col-web-20">
                         <div class="form-group">
-                          <label>Contratista</label>
+                          <label>Tipo</label>
                           <select>
-                            <option value="">Galvanizados</option>
+                            <option value="">Galvanizado</option>
                             <option value="">Elementos</option>
                             <option value="">Elementos</option>
                           </select>
@@ -149,87 +142,57 @@
                       </div>
                       <div class="col-movil-100 col-tablet-30 col-web-20">
                         <div class="form-group">
-                          <input type="submit" value="BUSCAR" class="search btn btn--success"/>
+                          <label>Doc. Ref</label>
+                          <input type="text"/>
                         </div>
+                        <p class="error">Campo Obligatorio</p>
+                      </div>
+                      <div class="col-movil-100 col-tablet-30 col-web-20">
+                        <div class="form-group">
+                          <label>Hoja de Ruta</label>
+                          <input type="text"/>
+                        </div>
+                        <p class="error">Campo Obligatorio</p>
+                      </div>
+                      <div class="col-movil-100 col-tablet-30 col-web-20">
+                        <div class="form-group">
+                          <label>Supervisor</label>
+                          <select>
+                            <option value="">Galvanizado</option>
+                            <option value="">Elementos</option>
+                            <option value="">Elementos</option>
+                          </select>
+                        </div>
+                        <p class="error">Campo Obligatorio</p>
+                      </div>
+                      <div class="col-movil-100 col-tablet-30 col-web-20">
+                        <div class="form-group">
+                          <label>Etapa o Destino</label>
+                          <input type="text"/>
+                        </div>
+                        <p class="error">
+                          Campo Obligatorio
+                          
+                        </p>
+                      </div>
+                      <div class="col-movil-100 col-tablet-30 col-web-20">
+                        <div class="form-group">
+                          <label>Obervaciones</label>
+                          <input type="text"/>
+                        </div>
+                        <p class="error">
+                          Campo Obligatorio
+                          
+                          
+                          
+                          
+                        </p>
                       </div>
                     </div>
                   </form>
-                  <div class="table-content">
-                    <table class="datatable">
-                      <thead>
-                        <tr>
-                          <th>Sel</th>
-                          <th>Codigo</th>
-                          <th>Rev</th>
-                          <th>Descripcion</th>
-                          <th>Cantidad</th>
-                          <th>Etapa</th>
-                          <th>Contratistas</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <input type="checkbox"/>
-                          </td>
-                          <td>Peter</td>
-                          <td>Griffin</td>
-                          <td>$100</td>
-                          <td>Peter</td>
-                          <td>Griffin</td>
-                          <td>
-                            $100
-                            
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox"/>
-                          </td>
-                          <td>Lois</td>
-                          <td>Griffin</td>
-                          <td>$150</td>
-                          <td>Peter</td>
-                          <td>Griffin</td>
-                          <td>
-                            $100
-                            
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox"/>
-                          </td>
-                          <td>Joe</td>
-                          <td>Swanson</td>
-                          <td>$300</td>
-                          <td>Peter</td>
-                          <td>Griffin</td>
-                          <td>
-                            $100
-                            
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <input type="checkbox"/>
-                          </td>
-                          <td>Cleveland</td>
-                          <td>Brown</td>
-                          <td>$250</td>
-                          <td>Peter</td>
-                          <td>Griffin</td>
-                          <td>$100</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="num-events">
-                    <h3>Número de Eventos: 10</h3>
-                  </div>
-                  <div class="row row--end">
-                    <div class="button-group"><a href="" class="btn btn--info">Asignar Fecha Fin</a><a href="" class="btn btn--success">Exportar Csv</a><a href="" class="btn btn--close">
-                        Cerrar
+                  <div class="row row--between"><a href="" class="btn btn--success">Ver detalle</a>
+                    <div class="button-group"><a href="" class="btn btn--success">Grabar</a><a href="" class="btn btn--close">
+                        Cancelar
                         </a></div>
                   </div>
                 </div>
@@ -252,7 +215,21 @@
           $('.date-picker').datepicker({
           });
           $('select').select2();
-          $(".datatable").DataTable();
+          $(".datatable").DataTable({
+              "language": {
+                  "lengthMenu": "Mostrar _MENU_ registros por pagina",
+                  "zeroRecords": "No se encontraron registros",
+                  "info": "Mostrando pagina _PAGE_ de _PAGES_",
+                  "infoEmpty": "No records available",
+                  "infoFiltered": "(filtered from _MAX_ total records)",
+                  "search": "Buscar",
+                  "paginate": {
+                    "previous": "Anterior",
+                    "next": "Siguiente"
+                  }
+              }
+      
+          });
       });
     </script>
     <script src="../../../static/js/core.js"></script>

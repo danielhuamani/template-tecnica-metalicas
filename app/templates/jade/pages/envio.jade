@@ -1,0 +1,163 @@
+extends ../common/base.jade
+block css
+    link(rel="stylesheet", href="../../../static/css/vendor/datepicker.css")
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    link(rel="stylesheet", href="../../../static/css/vendor/datatable.css")
+
+
+block content
+    .row.page-listado-avance
+        .col-movil-100
+            .panel.formBasic
+                .panel__header
+                    h4.
+                        Envio de paquete / KIT
+                .panel__content
+                    form(action="")
+                        .row.row--align-center
+
+                            .col-movil-100.col-tablet-30.col-web-20
+                                .form-group
+
+                                    label.
+                                        OT
+                                    input(type="text")
+                                p.error.
+                                    Campo Obligatorio
+                            .col-movil-100.col-tablet-30.col-web-20
+                                .form-group
+
+                                    label.
+                                        Tipo de Elemento
+                                    select
+                                        option(value="").
+                                            Elementos
+                                        option(value="").
+                                            Elementos
+                                        option(value="").
+                                            Elementos
+                                p.error.
+                                    Campo Obligatorio
+                            .col-movil-100.col-tablet-30.col-web-20
+                                .form-group
+
+                                    label.
+                                        Etapa Origen
+                                    select
+                                        option(value="").
+                                            Galvanizado
+                                        option(value="").
+                                            Elementos
+                                        option(value="").
+                                            Elementos
+                                p.error.
+                                    Campo Obligatorio
+                            .col-movil-100.col-tablet-30.col-web-20
+                                .form-group
+
+                                    label.
+                                        Fecha
+                                    input(type="text" class="date-picker" data-date-format="dd/mm/yyyy" placeholder="__/__/____")
+                                p.error.
+                                    Campo Obligatorio
+
+                            .col-movil-100.col-tablet-30.col-web-20
+                                .form-group
+
+                                    label.
+                                        Tipo
+                                    select
+                                        option(value="").
+                                            Galvanizado
+                                        option(value="").
+                                            Elementos
+                                        option(value="").
+                                            Elementos
+                                p.error.
+                                    Campo Obligatorio
+                            .col-movil-100.col-tablet-30.col-web-20
+                                .form-group
+
+                                    label.
+                                       Doc. Ref
+                                    input(type="text")
+                                p.error.
+                                    Campo Obligatorio
+                            .col-movil-100.col-tablet-30.col-web-20
+                                .form-group
+
+                                    label.
+                                        Hoja de Ruta
+                                    input(type="text")
+                                p.error.
+                                    Campo Obligatorio
+                            .col-movil-100.col-tablet-30.col-web-20
+                                .form-group
+
+                                    label.
+                                        Supervisor
+                                    select
+                                        option(value="").
+                                            Galvanizado
+                                        option(value="").
+                                            Elementos
+                                        option(value="").
+                                            Elementos
+                                p.error.
+                                    Campo Obligatorio
+                            .col-movil-100.col-tablet-30.col-web-20
+                                .form-group
+
+                                    label.
+                                        Etapa o Destino
+                                    input(type="text")
+                                p.error.
+                                    Campo Obligatorio
+
+                            .col-movil-100.col-tablet-30.col-web-20
+                                .form-group
+
+                                    label.
+                                        Obervaciones
+                                    input(type="text")
+                                p.error.
+                                    Campo Obligatorio
+
+
+
+
+                    .row.row--between
+                        a(href="" class="btn btn--success").
+                                Ver detalle
+                        .button-group
+
+                            a(href="" class="btn btn--success").
+                                Grabar
+                            a(href="" class="btn btn--close").
+                                Cancelar
+
+block js
+    script(src="../../../static/js/vendor/datatable.js")
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    script(src="../../../static/js/vendor/bootstrap-datepicker.js")
+    script.
+        $(document).ready(function($) {
+            $('.date-picker').datepicker({
+            });
+            $('select').select2();
+            $(".datatable").DataTable({
+                "language": {
+                    "lengthMenu": "Mostrar _MENU_ registros por pagina",
+                    "zeroRecords": "No se encontraron registros",
+                    "info": "Mostrando pagina _PAGE_ de _PAGES_",
+                    "infoEmpty": "No records available",
+                    "infoFiltered": "(filtered from _MAX_ total records)",
+                    "search": "Buscar",
+                    "paginate": {
+                      "previous": "Anterior",
+                      "next": "Siguiente"
+                    }
+                }
+
+            });
+        });

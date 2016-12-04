@@ -11,7 +11,7 @@ block content
             .panel.formBasic
                 .panel__header
                     h4.
-                        Listado de Avance
+                        Creacion de  Hoja de Ruta
                 .panel__content
                     form(action="")
                         .row.row--align-center
@@ -56,36 +56,47 @@ block content
                                 .form-group
 
                                     label.
-                                        Desde
+                                        Fecha
                                     input(type="text" class="date-picker" data-date-format="dd/mm/yyyy" placeholder="__/__/____")
+                                p.error.
+                                    Campo Obligatorio
+
+
+                            .col-movil-100.col-tablet-30.col-web-20
+                                .form-group
+
+                                    label.
+                                        Hoja de Ruta
+                                    input(type="text")
                                 p.error.
                                     Campo Obligatorio
                             .col-movil-100.col-tablet-30.col-web-20
                                 .form-group
 
                                     label.
-                                        Hasta
-                                    input(type="text" class="date-picker" data-date-format="dd/mm/yyyy" placeholder="__/__/____")
+                                        Codigo de Elem
+                                    input(type="text")
                                 p.error.
                                     Campo Obligatorio
-
                             .col-movil-100.col-tablet-30.col-web-20
                                 .form-group
 
                                     label.
-                                        Contratista
-                                    select
-                                        option(value="").
-                                            Galvanizados
-                                        option(value="").
-                                            Elementos
-                                        option(value="").
-                                            Elementos
+                                        Cantidad
+                                    input(type="text")
                                 p.error.
                                     Campo Obligatorio
                             .col-movil-100.col-tablet-30.col-web-20
                                 .form-group
-                                    input(type="submit" value="BUSCAR" class="search btn btn--success" )
+
+                                    label.
+                                        Descripcion
+                                    input(type="text")
+                                p.error.
+                                    Campo Obligatorio
+                            .col-movil-100.col-tablet-30.col-web-20
+                                .form-group
+                                    input(type="submit" value="Agregar" class="search btn btn--success" )
 
 
                     .table-content
@@ -175,12 +186,11 @@ block content
                             Número de Eventos: 10
                     .row.row--end
                         .button-group
-                            a(href="" class="btn btn--info").
-                                Asignar Fecha Fin
-                            a(href="" class="btn btn--success").
-                                Exportar Csv
+
                             a(href="" class="btn btn--close").
                                 Cerrar
+                            a(href="" class="btn btn--success").
+                                Grabar
 
 block js
     script(src="../../../static/js/vendor/datatable.js")
@@ -191,5 +201,19 @@ block js
             $('.date-picker').datepicker({
             });
             $('select').select2();
-            $(".datatable").DataTable();
+            $(".datatable").DataTable({
+                "language": {
+                    "lengthMenu": "Mostrar _MENU_ registros por pagina",
+                    "zeroRecords": "No se encontraron registros",
+                    "info": "Mostrando pagina _PAGE_ de _PAGES_",
+                    "infoEmpty": "No records available",
+                    "infoFiltered": "(filtered from _MAX_ total records)",
+                    "search": "Buscar",
+                    "paginate": {
+                      "previous": "Anterior",
+                      "next": "Siguiente"
+                    }
+                }
+
+            });
         });
