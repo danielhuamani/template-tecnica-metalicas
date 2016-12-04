@@ -99,6 +99,7 @@
 .formBasic .table-content tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+/*buttons*/
 .btn {
   cursor: pointer;
   margin: 0;
@@ -178,4 +179,19 @@ table.dataTable thead .sorting_desc {
   border-radius: 3px;
   background: color_white;
   border: 1px solid color_sidebar;
+}
+/*message*/
+.message {
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+}
+.message p {
+  margin: 0px;
+  font-size: 15px;
+}
+.message--danger {
+  color: color_danger_darken;
+  background: #ebccd1;
+  border: 1px solid color_danger_darken;
 }

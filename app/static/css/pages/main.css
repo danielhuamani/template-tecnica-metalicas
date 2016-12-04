@@ -456,7 +456,7 @@ footer span {
   margin: 0;
   margin-top: 5px;
   font-size: 13px;
-  color: #e14242;
+  color: #d9534f;
 }
 .formBasic .table-content {
   margin-top: 10px;
@@ -565,6 +565,20 @@ table.dataTable thead .sorting_desc {
   background: #fff;
   border: 1px solid #232732;
 }
+.message {
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+}
+.message p {
+  margin: 0px;
+  font-size: 15px;
+}
+.message--danger {
+  color: #c32e2a;
+  background: #ebccd1;
+  border: 1px solid #c32e2a;
+}
 .page-listado-avance .search {
   margin-bottom: 5px;
 }
@@ -574,4 +588,61 @@ table.dataTable thead .sorting_desc {
 }
 .page-listado-avance .num-events h3 {
   font-size: 16px;
+}
+.overlay {
+  background: rgba(0,0,0,0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  top: 0;
+}
+.wrapper-login {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.wrapper-login .login-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/30643.jpeg");
+  background-size: cover;
+}
+.wrapper-login .login-container {
+  position: absolute;
+  z-index: 40;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.wrapper-login .login-container .login {
+  max-width: 600px;
+}
+.wrapper-login .login-container .login__header {
+  padding: 15px;
+  background: #fbb040;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.wrapper-login .login-container .login__header h2 {
+  text-align: center;
+  color: #fff;
+}
+.wrapper-login .login-container .login__content {
+  padding: 15px;
+  background: #fff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.wrapper-login .login-container .login__content .form-group {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
