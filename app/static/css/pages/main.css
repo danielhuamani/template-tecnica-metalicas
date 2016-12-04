@@ -405,12 +405,11 @@ footer span {
 .formBasic .form-group input[type="number"],
 .formBasic .form-group input[type="password"] {
   width: 100%;
-  height: 26px;
+  height: 28px;
   padding-left: 5px;
   border-radius: 3px;
   border: 1px solid #232732;
   box-sizing: border-box;
-  margin-top: 5px;
   font-size: 13px;
 }
 .formBasic .form-group input[type="text"]:focus,
@@ -419,12 +418,22 @@ footer span {
   border: 1px solid #5cb85c;
   outline: #7d57c1;
 }
+.formBasic .form-group .select2-container .select2-selection--single .select2-selection__rendered {
+  font-size: 14px;
+}
+.formBasic .form-group .select2-container--default .select2-selection--single {
+  border: 1px solid #232732;
+}
+.formBasic .form-group .select2-results__options {
+  font-size: 13px;
+}
 .formBasic .form-group select {
   width: 100%;
   height: 28px;
   margin-top: 5px;
   font-size: 13px;
   border-radius: 3px;
+  background: #fff;
   border: 1px solid #232732;
 }
 .formBasic .form-group select option {
@@ -435,6 +444,8 @@ footer span {
   outline: #7d57c1;
 }
 .formBasic .form-group label {
+  margin-bottom: 2px;
+  display: block;
   font-size: 14px;
   color: #232732;
 }
@@ -444,63 +455,41 @@ footer span {
   font-size: 13px;
   color: #e14242;
 }
-.formAdvanced .form-group:first-child .form-label {
-  border-top-left-radius: 4px;
+.formBasic .table-content {
+  margin-top: 10px;
 }
-.formAdvanced .form-group:first-child .form-input {
-  border-top: 1px solid #232732;
-  border-top-right-radius: 4px;
+.formBasic .table-content table {
+  border: 1px solid #232732;
+  border-collapse: collapse;
+  width: 100%;
 }
-.formAdvanced .form-group:last-child .form-label {
-  border-bottom-left-radius: 4px;
+.formBasic .table-content th,
+.formBasic .table-content td {
+  text-align: left;
+  padding: 8px;
 }
-.formAdvanced .form-group:last-child .form-input {
-  border-bottom: 1px solid #232732;
-  border-bottom-right-radius: 4px;
+.formBasic .table-content td {
+  border: 1px solid #232732;
 }
-.formAdvanced .form-group .form-label {
-  border-bottom: 1px solid #faa800;
-  background: #232732;
+.formBasic .table-content td input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
 }
-.formAdvanced .form-group .form-label label {
+.formBasic .table-content th {
+  background-color: #232732;
   color: #fff;
+  font-family: 'lato';
 }
-.formAdvanced .form-group .form-input {
-/*padding-top 5px
-			padding-bottom 5px*/
-  border-right: 1px solid #232732;
-}
-.formAdvanced .form-group .form-input textarea {
-  padding-left: 5px;
-  border-radius: 3px;
-  border: 1px solid #232732;
-  box-sizing: border-box;
-  font-size: 14px;
-  width: 100%;
-}
-.formAdvanced .form-group .form-input input[type="text"],
-.formAdvanced .form-group .form-input input[type="number"],
-.formAdvanced .form-group .form-input input[type="password"] {
-  width: 100%;
-  height: 26px;
-  padding-left: 5px;
-  border-radius: 3px;
-  border: 1px solid #232732;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-.formAdvanced .form-group .form-input input[type="text"]:focus,
-.formAdvanced .form-group .form-input input[type="number"]:focus,
-.formAdvanced .form-group .form-input input[type="password"]:focus {
-  border: 1px solid #7d57c1;
-  outline: #7d57c1;
+.formBasic .table-content tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 .btn {
   cursor: pointer;
   margin: 0;
   border: 1px solid #232732;
-  padding: 7px 22px;
+  padding: 7px 15px;
   border-radius: 4px;
+  font-size: 14px;
 }
 .btn--success {
   background: #5cb85c;
@@ -510,4 +499,44 @@ footer span {
 }
 .btn--success:hover {
   background: #439a43;
+}
+.btn--info {
+  background: #167a8b;
+  color: #fff;
+  border: 1px solid #12626f !important;
+  transition: 0.2s ease all;
+}
+.btn--info:hover {
+  background: #12626f;
+}
+.btn--close {
+  background: #424242;
+  color: #fff;
+  border: 1px solid #353535 !important;
+  transition: 0.2s ease all;
+}
+.btn--close:hover {
+  background: #353535;
+}
+.button-group {
+  display: flex;
+}
+.button-group .btn:last-child {
+  margin-right: 0px;
+}
+.button-group .btn:first-child {
+  margin-left: 0px;
+}
+.button-group .btn {
+  margin: 0px 5px;
+}
+.page-listado-avance .search {
+  margin-bottom: 5px;
+}
+.page-listado-avance .num-events {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.page-listado-avance .num-events h3 {
+  font-size: 16px;
 }

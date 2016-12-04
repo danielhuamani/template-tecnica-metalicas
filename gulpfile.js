@@ -65,8 +65,8 @@ gulp.task('templates_blocks', function() {
 });
 gulp.task('watch', function() {
 
-	gulp.watch('app/static/stylus/*.styl', ['stylus']),
-	gulp.watch('app/templates/jade/*.jade', ['templates'])
+  gulp.watch('app/static/stylus/*.styl', ['stylus']),
+  gulp.watch('app/templates/jade/*.jade', ['templates'])
   gulp.watch(directorio.stylus_blocks, ['stylus_blocks'])
   gulp.watch(directorio.jade_blocks, ['templates_blocks'])
 });

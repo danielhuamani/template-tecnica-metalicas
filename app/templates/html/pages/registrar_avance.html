@@ -93,7 +93,7 @@
             <div class="col-movil-100">
               <div class="panel formBasic">
                 <div class="panel__header">
-                  <h4>Listado de Avance</h4>
+                  <h4>Registro de Avance</h4>
                 </div>
                 <div class="panel__content">
                   <form action="">
@@ -108,7 +108,7 @@
                       <div class="col-movil-100 col-tablet-30 col-web-20">
                         <div class="form-group">
                           <label>Tipo de Elemento</label>
-                          <select>
+                          <select class="select-two">
                             <option value="">Elementos</option>
                             <option value="">Elementos</option>
                             <option value="">Elementos</option>
@@ -119,13 +119,16 @@
                       <div class="col-movil-100 col-tablet-30 col-web-20">
                         <div class="form-group">
                           <label>Etapa Actual</label>
-                          <select>
+                          <select class="select-two">
                             <option value="">Galvanizado</option>
                             <option value="">Elementos</option>
                             <option value="">Elementos</option>
                           </select>
                         </div>
-                        <p class="error">Campo Obligatorio</p>
+                        <p class="error">
+                          Campo Obligatorio
+                          
+                        </p>
                       </div>
                       <div class="col-movil-100 col-tablet-30 col-web-20">
                         <div class="form-group">
@@ -139,15 +142,23 @@
                           <label>Hasta</label>
                           <input type="text" data-date-format="dd/mm/yyyy" placeholder="__/__/____" class="date-picker"/>
                         </div>
-                        <p class="error">
-                          Campo Obligatorio
-                          
-                        </p>
+                        <p class="error">Campo Obligatorio</p>
+                      </div>
+                      <div class="col-movil-100 col-tablet-30 col-web-20">
+                        <div class="form-group">
+                          <label>Supervisor</label>
+                          <select class="select-two">
+                            <option value="">Galvanizado</option>
+                            <option value="">Elementos</option>
+                            <option value="">Elementos</option>
+                          </select>
+                        </div>
+                        <p class="error">Campo Obligatorio</p>
                       </div>
                       <div class="col-movil-100 col-tablet-30 col-web-20">
                         <div class="form-group">
                           <label>Contratista</label>
-                          <select>
+                          <select class="select-two">
                             <option value="">Galvanizados</option>
                             <option value="">Elementos</option>
                             <option value="">Elementos</option>
@@ -257,7 +268,7 @@
       $(document).ready(function($) {
           $('.date-picker').datepicker({
           });
-          $('select').select2();
+          $('.select-two').select2();
       });
     </script>
     <script src="../../../static/js/core.js"></script>

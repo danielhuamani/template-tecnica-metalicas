@@ -19,24 +19,34 @@
 	.form-group
 
 		//margin-bottom 10px
+		// input[type="submit"]
+		// 	width 100%
 		input[type="text"], input[type="number"], input[type="password"]
 			width 100%
-			height 26px
+			height 28px
 			padding-left 5px
 			border-radius 3px
 			border 1px solid color_sidebar
 			box-sizing border-box
-			margin-top 5px
+
 			font-size 13px
 			&:focus
 				border 1px solid color_success
 				outline color_panel
+		.select2-container .select2-selection--single .select2-selection__rendered
+			font-size 14px
+		.select2-container--default .select2-selection--single
+			border 1px solid color_sidebar
+		.select2-results__options
+			font-size 13px
 		select
+
 			width 100%
 			height 28px
 			margin-top 5px
 			font-size 13px
 			border-radius 3px
+			background color_white
 			border 1px solid color_sidebar
 			option
 				margin-top 50px
@@ -45,6 +55,9 @@
 				border 1px solid color_success
 				outline color_panel
 		label
+
+			margin-bottom 2px
+			display block
 			font-size 14px
 			color color_sidebar
 	p.error
@@ -52,57 +65,39 @@
 		margin-top 5px
 		font-size 13px
 		color color_danger
-.formAdvanced
-	.form-group:first-child
-		.form-label
-			border-top-left-radius 4px
+	.table-content
+		margin-top 10px
+		table
+			border 1px solid color_sidebar
+			border-collapse: collapse
+			width: 100%
 
-		.form-input
-			border-top 1px solid color_sidebar
-			border-top-right-radius 4px
-	.form-group:last-child
-		.form-label
-			border-bottom-left-radius 4px
-		.form-input
-			border-bottom 1px solid color_sidebar
-			border-bottom-right-radius 4px
-	.form-group
-		.form-label
-			border-bottom 1px solid color_main
-			background color_sidebar
-			label
-				color color_white
-		.form-input
-			/*padding-top 5px
-			padding-bottom 5px*/
-			border-right 1px solid color_sidebar
-			textarea
-				padding-left 5px
-				border-radius 3px
-				border 1px solid color_sidebar
-				box-sizing border-box
-				font-size 14px
-				width 100%
+		th, td
+			text-align: left
+			padding: 8px
+		td
+			border 1px solid color_sidebar
+			input[type="checkbox"]
+				width 20px
+				height 20px
+		th
+			background-color: color_sidebar
+			color: white
+			font-family 'lato'
 
-			input[type="text"], input[type="number"], input[type="password"]
-				width 100%
-				height 26px
-				padding-left 5px
-				border-radius 3px
-				border 1px solid color_sidebar
-				box-sizing border-box
-				font-size 14px
-				&:focus
-					border 1px solid color_panel
-					outline color_panel
-/*botones*/
+		tr
+			&:nth-child(even)
+				background-color: #f2f2f2
+
+
 
 .btn
 	cursor pointer
 	margin 0
 	border 1px solid color_sidebar
-	padding 7px 22px
+	padding 7px 15px
 	border-radius 4px
+	font-size 14px
 .btn--success
 	background color_success
 	color color_white
@@ -111,3 +106,30 @@
 	transition 0.2s ease all
 	&:hover
 		background color_success_darken
+.btn--info
+	background color_info
+	color color_white
+
+	border 1px solid color_info_darken !important
+	transition 0.2s ease all
+	&:hover
+		background color_info_darken
+.btn--close
+	background color_close
+	color color_white
+
+	border 1px solid color_close_darken !important
+	transition 0.2s ease all
+	&:hover
+		background color_close_darken
+
+
+
+.button-group
+	display flex
+	.btn:last-child
+		margin-right 0px
+	.btn:first-child
+		margin-left 0px
+	.btn
+		margin 0px 5px

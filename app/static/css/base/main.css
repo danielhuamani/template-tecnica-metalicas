@@ -23,7 +23,6 @@ figure img {
   display: block;
 }
 img.thumbnail-circle {
-  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 h1,

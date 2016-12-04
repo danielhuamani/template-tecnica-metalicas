@@ -9,7 +9,7 @@ block content
             .panel.formBasic
                 .panel__header
                     h4.
-                        Listado de Avance
+                        Registro de Avance
                 .panel__content
                     form(action="")
                         .row.row--align-center
@@ -27,7 +27,7 @@ block content
 
                                     label.
                                         Tipo de Elemento
-                                    select
+                                    select.select-two
                                         option(value="").
                                             Elementos
                                         option(value="").
@@ -41,7 +41,7 @@ block content
 
                                     label.
                                         Etapa Actual
-                                    select
+                                    select.select-two
                                         option(value="").
                                             Galvanizado
                                         option(value="").
@@ -50,6 +50,7 @@ block content
                                             Elementos
                                 p.error.
                                     Campo Obligatorio
+
                             .col-movil-100.col-tablet-30.col-web-20
                                 .form-group
 
@@ -66,13 +67,26 @@ block content
                                     input(type="text" class="date-picker" data-date-format="dd/mm/yyyy" placeholder="__/__/____")
                                 p.error.
                                     Campo Obligatorio
+                            .col-movil-100.col-tablet-30.col-web-20
+                                .form-group
 
+                                    label.
+                                        Supervisor
+                                    select.select-two
+                                        option(value="").
+                                            Galvanizado
+                                        option(value="").
+                                            Elementos
+                                        option(value="").
+                                            Elementos
+                                p.error.
+                                    Campo Obligatorio
                             .col-movil-100.col-tablet-30.col-web-20
                                 .form-group
 
                                     label.
                                         Contratista
-                                    select
+                                    select.select-two
                                         option(value="").
                                             Galvanizados
                                         option(value="").
@@ -186,5 +200,5 @@ block js
         $(document).ready(function($) {
             $('.date-picker').datepicker({
             });
-            $('select').select2();
+            $('.select-two').select2();
         });
