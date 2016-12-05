@@ -27,6 +27,18 @@
 			event.preventDefault();
 			$(this).find(".toggle-card").toggleClass('toggle-card-active');
 		});
+		$(".open-pop-up").click(function(event) {
+			/* Act on the event */
+
+			event.preventDefault();
+			$(".pop-up").toggleClass('pop-up-active');
+		});
+		$(".pop-up-close").click(function(event) {
+			/* Act on the event */
+
+			event.preventDefault();
+			$(".pop-up").toggleClass('pop-up-active');
+		});
 	});
 
 

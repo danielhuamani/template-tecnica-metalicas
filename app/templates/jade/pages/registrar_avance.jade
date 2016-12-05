@@ -97,7 +97,7 @@ block content
                                     Campo Obligatorio
                             .col-movil-100.col-tablet-30.col-web-20
                                 .form-group
-                                    input(type="submit" value="BUSCAR" class="search btn btn--success" )
+                                    input(type="submit" value="BUSCAR" class=" search btn btn--success" )
 
 
                     .table-content
@@ -186,12 +186,49 @@ block content
                             Número de Eventos: 10
                     .row.row--end
                         .button-group
-                            a(href="" class="btn btn--info").
+                            a(href="" class="open-pop-up btn btn--info").
                                 Asignar Fecha Fin
                             a(href="" class="btn btn--success").
                                 Exportar Csv
                             a(href="" class="btn btn--close").
                                 Cerrar
+    section.pop-up
+        .overlay
+        .pop-up-content.row
+            .pop-up-close
+                i.fa.fa-times.icon-close
+            .col-web-100
+                form(action="").formBasic
+                    .row
+                        .col-movil-100.col-tablet-30.col-web-50
+                                .form-group
+
+                                    label.
+                                        Supervisor
+                                    select.select-two
+                                        option(value="").
+                                            Galvanizado
+                                        option(value="").
+                                            Elementos
+                                        option(value="").
+                                            Elementos
+                                p.error.
+                                    Campo Obligatorio
+                            .col-movil-100.col-tablet-30.col-web-50
+                                .form-group
+
+                                    label.
+                                        Contratista
+                                    select.select-two
+                                        option(value="").
+                                            Galvanizados
+                                        option(value="").
+                                            Elementos
+                                        option(value="").
+                                            Elementos
+                    .row.row--end
+                        .button-group
+                            input(type="submit" value="Guardar" class="btn btn--success")
 
 block js
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>

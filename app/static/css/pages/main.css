@@ -582,6 +582,41 @@ table.dataTable thead .sorting_desc {
   background: #ebccd1;
   border: 1px solid #c32e2a;
 }
+.pop-up {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  right: 0;
+  margin: auto;
+  justify-content: center;
+}
+.pop-up .pop-up-content {
+  max-width: 500px;
+  width: 700px;
+  background: #fff;
+  position: relative;
+  z-index: 40;
+  border-radius: 4px;
+}
+.pop-up .pop-up-content .pop-up-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  background: #888;
+  padding: 5px;
+}
+.pop-up .pop-up-content .pop-up-close .icon-close {
+  font-size: 16px;
+  color: #fff;
+}
+.pop-up-active {
+  display: flex !important;
+}
 .page-listado-avance .search {
   margin-bottom: 5px;
 }
