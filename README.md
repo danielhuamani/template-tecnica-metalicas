@@ -7,7 +7,7 @@ $npm install
 $gulp
 ```
 
-Si lo se requiere correr stylus
+Si solo se requiere correr stylus
 ```sh
 $npm install stylus -g
 $stylus -u nib -w directorio_origen/main.styl -o directorio_compilar/
