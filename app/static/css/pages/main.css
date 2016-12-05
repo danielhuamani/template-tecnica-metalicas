@@ -421,6 +421,9 @@ footer span {
   border: 1px solid #5cb85c;
   outline: #7d57c1;
 }
+.formBasic .form-group .select2-container {
+  width: 100% !important;
+}
 .formBasic .form-group .select2-container .select2-selection--single .select2-selection__rendered {
   font-size: 14px;
 }
